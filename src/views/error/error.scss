@@ -1,0 +1,16 @@
+.error {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  .error__title{
+    font-size: 2em;
+    font-weight: 700;
+    color: #222831;
+    padding-top: 30px;
+  }
+  .error__message{
+    text-align: center;
+    color: #393E46;
+    padding: 30px;
+  }
+}

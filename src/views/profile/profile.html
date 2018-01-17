@@ -1,0 +1,58 @@
+<div class="profile">
+    <div class="profile__title">
+        Meu perfil
+    </div>
+    <div class="profile__content">
+        <span class="content__label">Nome</span>
+        <span class="content__description">
+                        André Lorenz</span>
+    </div>
+    <div class="profile__content">
+        <span class="content__label">Idade</span>
+        <span class="content__description">
+                        24 anos</span>
+    </div>
+    <div class="profile__content">
+        <span class="content__label">Cidade Natal</span>
+        <span class="content__description">
+                        Timbó - SC</span>
+    </div>
+    <div class="profile__content">
+        <span class="content__label">Hobbies</span>
+        <span class="content__description">
+                        Games, poker, tênis e futebol</span>
+    </div>
+    <div class="profile__title">
+        Repositórios Github
+    </div>
+    <div class="profile__repo" ng-repeat="repo in $ctrl.repositories">
+        <div class="repo__content">
+            <div class="content__align">
+                <span class="content__label">Repositório</span>
+                <span class="content__description">
+                                        <strong>{{repo.name}}</strong></span>
+            </div>
+            <div class="content__align">
+                <span class="content__label">Linguagem</span>
+                <span class="content__description">
+                                        {{repo.language || '-'}}</span>
+            </div>
+            <div class="content__align">
+                <span class="content__label">Forks</span>
+                <span class="content__description">
+                                        <i class="fa fa-code-fork" aria-hidden="true"></i> {{repo.forks_count}}</span>
+            </div>
+            <div class="content__align">
+                <span class="content__label">Stars</span>
+                <span class="content__description">
+                                        <i class="fa fa-star" aria-hidden="true"></i> {{repo.stargazers_count}}</span>
+            </div>
+        </div>
+        <div class="repo__link">
+            <a class="link__align" target="blank" ng-href="{{repo.svn_url}}">
+                                Abrir repositório
+            </a>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,39 @@
+.repositories {
+  .repositories__search-field {
+    position: relative;
+    .search-field__input {
+      display: block;
+      margin: 0 auto;
+      padding: 0.5em 0.35em;
+      padding-left: 70px;
+      border: none;
+      outline: none;
+      border-radius: 1.5em;
+      font-size: 1.5em;
+      text-align: center;
+      color: #393E46;
+      background: #fff url('../../assets/icons/search.svg') no-repeat scroll 50%;
+      background-size: 36px 36px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.075);
+      transition: width 0.4s ease-in-out, background-position-x 0.4s ease-in-out;
+      width: 20%;
+      &:focus {
+        background: #fff url('../../assets/icons/search.svg') no-repeat scroll 24px 7px;
+        background-size: 36px 36px;
+        width: 50%;
+      }
+      &:valid {
+        background: #fff url('../../assets/icons/search.svg') no-repeat scroll 24px 7px;
+        background-size: 36px 36px;
+        width: 50%;
+      }
+    }
+    .search-field__label{
+      margin: 0 auto;
+      text-align: center;
+      padding: 10px;
+      color: #00ADB5;
+      font-weight: 500;
+    }
+  }
+}
