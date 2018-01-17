@@ -1,0 +1,39 @@
+<div class="card-component">
+    <div class="card-component__title">
+        <a target="blank" ng-href="{{$ctrl.repository.svn_url}}">{{$ctrl.repository.name}}</a>
+        <div class="title__language">{{$ctrl.repository.language}}</div>
+    </div>
+
+    <div class="card-component__description">
+            {{$ctrl.repository.description}}
+    </div>
+
+
+    <div class="card-component__body">
+        <div class="body__content">
+            <span class="content__label">Owner</span>
+            <span class="content__description"><i class="fa fa-user-o" aria-hidden="true"></i> {{$ctrl.repository.owner.login}}</span>
+        </div>
+        <div class="body__content">
+            <span class="content__label">Forks</span>
+            <span class="content__description">
+                    <i class="fa fa-code-fork" aria-hidden="true"></i> {{$ctrl.repository.forks_count}}</span>
+        </div>
+        <div class="body__content">
+            <span class="content__label">Stars</span>
+            <span class="content__description"><i class="fa fa-star" aria-hidden="true"></i> {{$ctrl.repository.stargazers_count}}</span>
+        </div>
+    </div>
+
+    <hr>
+    <div class="card-component__footer">
+        <div class="footer__content">
+            <span class="content__label">Criado em</span>
+            <span class="content__description">{{$ctrl.repository.created_at | date: 'medium'}}</span>
+        </div>
+        <div class="footer__content">
+            <span class="content__label">Última atualização em</span>
+            <span class="content__description">{{$ctrl.repository.updated_at | date: 'medium'}}</span>
+        </div>
+    </div>
+</div>

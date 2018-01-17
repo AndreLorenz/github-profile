@@ -1,0 +1,8 @@
+<div class="repositories">
+    <div class="repositories__search-field">
+        <div class="search-field__label">Busque um repositório pelo nome</div>
+        <input class="search-field__input" type="text" ng-model="$ctrl.searchText" required />
+    </div>
+    <loader-component ng-if="!$ctrl.repositories.length" description="Aguarde um instante..."></loader-component>
+    <card-component ng-if="$ctrl.repositories.length" repository="repo" ng-repeat="repo in $ctrl.repositories | filter:{name: $ctrl.searchText}"></card-component>
+</div>

@@ -1,0 +1,42 @@
+.contact {
+  margin: 30px auto;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.075);
+  padding: 18px 36px;
+  .contact__title {
+    font-size: 1.2em;
+    font-weight: 700;
+    color: #222831;
+    padding-bottom: 20px;
+    @media (max-width: 920px) {
+      text-align: center;
+    }
+  }
+  .contact__content {
+    padding-bottom: 20px;
+    @media (max-width: 920px) {
+      text-align: center;
+    }
+    .content__label {
+      display: block;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: #00ADB5;
+      font-size: 0.6em;
+      padding-bottom: 7px;
+    }
+    .content__description {
+      display: block;
+      font-weight: 400;
+      font-size: 0.9em;
+      color: #393E46;
+      &:link{
+        text-decoration: none;
+      }
+      i{
+        padding-right: 6px;
+      }
+    }
+  }
+}

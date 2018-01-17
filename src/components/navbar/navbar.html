@@ -1,0 +1,32 @@
+<div class="navbar-component">
+    <div class="navbar-component___card">
+        <div class="card__avatar">
+            <img ng-src="{{$ctrl.user.avatar_url}}" height="150" width="150">
+        </div>
+        <h2>{{$ctrl.user.name}}</h2>
+        <h4>{{$ctrl.user.location}}</h4>
+        <p>{{$ctrl.user.bio}}</p>
+        <hr>
+        <ul class="card__menu">
+            <li>
+                <div class="menu__link">
+                    <i class="link__icon fa fa-user" aria-hidden="true"></i>
+                    <a ui-sref-active="active" ui-sref="profile">Perfil</a>
+                </div>
+            </li>
+
+            <li>
+                <div class="menu__link activated">
+                    <i class="link__icon fa fa-folder" aria-hidden="true"></i>
+                    <a ui-sref-active="active" ui-sref="repositories">Repositórios</a>
+                </div>
+            </li>
+            <li>
+                <div class="menu__link">
+                    <i class="link__icon fa fa-newspaper-o" aria-hidden="true"></i>
+                    <a ui-sref-active="active" ui-sref="contact">Contato</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>

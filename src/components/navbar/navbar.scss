@@ -1,0 +1,83 @@
+.navbar-component {
+  display: flex;
+  .navbar-component___card {
+    width: 70%;
+    margin: 100px auto;
+    margin-bottom: 0px;
+    background-color: #fff; // background: #fff url('../../assets/icons/github.png') no-repeat;
+    padding: 0 22px 0 22px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.075);
+    text-align: center;
+    .card__avatar {
+      border-radius: 100px;
+      overflow: hidden;
+      height: 150px;
+      width: 150px;
+      position: relative;
+      margin: auto;
+      top: -30px;
+      box-shadow: 0 0 0 13px #FFF;
+    }
+    .card__avatar img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      border-radius: 100px;
+    }
+    h2 {
+      font-size: 32px;
+      font-weight: 600;
+      margin-bottom: 15px;
+      color: #333;
+    }
+    h4 {
+      font-size: 13px;
+      color: #00ADB5;
+      letter-spacing: 1px;
+      margin-bottom: 25px;
+      text-transform: uppercase;
+    }
+    p {
+      font-size: 16px;
+      line-height: 26px;
+      margin-bottom: 20px;
+      color: #666;
+    }
+    hr {
+      width: 70%;
+      height: 1px;
+      border: 0;
+      border-top: 1px solid #EEEEEE;
+      padding: 0;
+    }
+    .card__menu {
+      display: flex;
+      justify-content: space-around;
+      padding: 10px;
+      @media (max-width: 600px) {
+        flex-direction: column;
+        justify-content: center;
+      }
+      li {
+        text-align: center;
+        display: table-cell;
+        .menu__link {
+          cursor: pointer;
+          a {
+            text-decoration: none;
+            font-weight: 500;
+            color: #393E46;
+            &.active {
+              color: #00ADB5;
+            }
+          }
+          .link__icon {
+            color: #393E46;
+            padding-right: 6px;
+          }
+        }
+      }
+    }
+  }
+}
